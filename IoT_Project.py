@@ -2,9 +2,10 @@
 !pip install python-telegram-bot
 
 #*** SENDING DATA TO ADAFRUIT ****
+import os
 
-ADAFRUIT_IO_USERNAME = "Virtual_Master"
-ADAFRUIT_IO_KEY = "aio_ghgs659UKXFiN9KQFOBqdCDff0F5"
+ADAFRUIT_IO_USERNAME = os.getenv('ADAFRUIT_IO_USERNAME')  #Use your own ADAFRUIT_IO_USERNAME
+ADAFRUIT_IO_KEY = os.getenv('ADAFRUIT_IO_KEY')            #Use your own Adafruit Active Key
 
 from Adafruit_IO import Client, Feed
 from Adafruit_IO import Data
