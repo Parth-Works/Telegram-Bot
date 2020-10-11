@@ -1,4 +1,7 @@
 
+!pip install python-telegram-bot
+!pip install adafruit-io
+
 #*** SENDING DATA TO ADAFRUIT ****
 
 import os
