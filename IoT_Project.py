@@ -2,6 +2,7 @@
 !pip install python-telegram-bot
 
 #*** SENDING DATA TO ADAFRUIT ****
+
 import os
 
 ADAFRUIT_IO_USERNAME = os.getenv('ADAFRUIT_IO_USERNAME')  #Use your own ADAFRUIT_IO_USERNAME
