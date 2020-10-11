@@ -13,6 +13,7 @@ from Adafruit_IO import Data
 
 aio = Client(ADAFRUIT_IO_USERNAME, ADAFRUIT_IO_KEY)
 
+from Adafruit_IO import Client,Data
 
 #*** TELEGRAM BOT ****
 
@@ -20,7 +21,7 @@ from telegram.ext import Updater,CommandHandler
 from telegram.ext import MessageHandler, Filters           
 import logging
 
-u = Updater('1361391561:AAHH1-JmCX0-QWWDvmXrSZGZz5lIPY9jiBQ') 
+u = Updater('1361391561:AAHH1-JmCX0-QWWDvmXrSZGZz5lIPY9jiBQ')   #Use your Telegram Token HTTP API
 dp = u.dispatcher 
 
 logging.basicConfig(format='%(asctime)s - %(time)s - %(levelname)s - %(message)s', level=logging.INFO)
